@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
-export default Ember.Controller.extend({
-  actions: {
+export default Ember.ArrayController.extend({
+    actions: {
         createTodo: function(newTitle) {
             // Create the new Todo model
             var todo = this.store.createRecord('todo', {
